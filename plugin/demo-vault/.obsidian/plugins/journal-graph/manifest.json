@@ -1,0 +1,9 @@
+{
+  "id": "journal-graph",
+  "name": "Journal Graph",
+  "version": "0.2.0",
+  "minAppVersion": "1.4.0",
+  "description": "Send the active note to a local extractor and view its knowledge graph.",
+  "author": "Niklas Inderst",
+  "isDesktopOnly": true
+}

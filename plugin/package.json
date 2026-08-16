@@ -1,0 +1,29 @@
+{
+  "name": "journal-graph",
+  "version": "0.2.0",
+  "description": "Obsidian plugin that sends the active note to a local extractor and renders the returned knowledge graph.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production"
+  },
+  "keywords": [
+    "obsidian",
+    "knowledge-graph",
+    "journaling"
+  ],
+  "author": "Niklas Inderst",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.21.5",
+    "obsidian": "^1.5.7",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "vis-data": "^7.1.9",
+    "vis-network": "^9.1.9"
+  }
+}

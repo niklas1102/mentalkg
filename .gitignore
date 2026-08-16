@@ -1,0 +1,68 @@
+# Node / plugin build
+node_modules/
+obsidian-plugin/main.js
+obsidian-plugin/main.js.map
+obsidian-plugin/*.js.map
+plugin/main.js
+plugin/main.js.map
+plugin/*.js.map
+
+# Model artifacts (large binaries, regenerable / HF-hosted)
+modeling/results/
+models/*
+!models/.gitkeep
+modeling/baselines/artifacts/
+modeling/baselines/artifacts_v2/
+modeling/baselines/artifacts_v2_bert/
+
+# GPU pod staging (kept on disk, out of git)
+pod_results/
+gpu_bundle/
+gpu_bundle.tar.gz
+
+# Distribution / demo bundles (kept on disk, out of git)
+dist-demo/
+dist-demo.zip
+
+# Attic (local-only preserve)
+_attic/
+
+# Secrets
+pipeline/config.json
+config.json
+
+# Old backup files
+*.bak
+*.bak2
+*.bak3
+
+# Large derived data (regenerable from source)
+pipeline/output/dataset.jsonl
+pipeline/output/graphs.jsonl
+pipeline/output/verification.jsonl
+pipeline/output/run*.log
+pipeline/output/q_*.json
+pipeline/output/usage.json
+pipeline/output/report.md
+pipeline/output_pilot/
+pipeline/output_pilot_de_v2/
+modeling/data/
+modeling/data_v2/
+modeling/data_v2_random/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+pipeline/run.log
+pipeline/output/run_full.log

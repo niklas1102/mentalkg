@@ -1,0 +1,39 @@
+{
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "openrouter_api_key": "${OPENROUTER_API_KEY}",
+  "base_url": "https://openrouter.ai/api/v1/chat/completions",
+  "generator_version": 2,
+  "n_participants_en": 1795,
+  "n_participants_de": 1641,
+  "days_per_participant": 14,
+  "seed": 42,
+  "generation_temperature": 0.8,
+  "verification_temperature": 0.0,
+  "request_timeout": 90,
+  "max_retries": 4,
+  "retry_backoff_seconds": 3,
+  "max_verify_attempts": 3,
+  "max_generation_attempts": 3,
+  "concurrency": 32,
+  "concurrency_env": "PIPELINE_CONCURRENCY",
+  "variable_pool_path": "../data/variable_pool.json",
+  "output_dir": "output",
+  "pilot_output_dir": "output_pilot",
+  "pilot_participants": 20,
+  "pricing": {
+    "prompt_per_1m": 0.15,
+    "completion_per_1m": 0.60
+  },
+  "usage_flush_every": 5,
+  "thresholds": {
+    "accept_min_node_coverage": 1.0,
+    "accept_min_edge_coverage": 0.9,
+    "accept_min_temporal_consistency": 0.95,
+    "accept_max_hallucination": 0,
+    "review_min_node_coverage": 0.75,
+    "review_min_edge_coverage": 0.6,
+    "review_min_temporal_consistency": 0.75,
+    "review_max_hallucination": 1
+  }
+}

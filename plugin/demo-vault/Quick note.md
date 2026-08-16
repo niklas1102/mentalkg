@@ -1,0 +1,5 @@
+Long day, and not a good one. The train home was delayed for over an hour and I stood on that crowded platform getting more and more worked up. Halfway home my sister called, and within two minutes we slipped straight into the same old argument about the family visit this summer — who hosts, who travels, who supposedly never makes an effort. I hung up angry, and then immediately felt guilty about half the things I said.
+
+The rest of the ride my mind kept looping through the call, replaying it line by line. It all felt like a bit too much at once, and I noticed I had skipped dinner and was not even hungry anymore.
+
+Back home I made myself cook a proper meal anyway, put some music on while I ate, and spent twenty minutes journaling to get it all out of my head. By the end I felt real relief. Better now.

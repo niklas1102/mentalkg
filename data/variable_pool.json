@@ -1,0 +1,1485 @@
+{
+  "schema_version": "0.1",
+  "node_concepts": [
+    {
+      "concept_id": "emotion_stress",
+      "type": "emotion",
+      "label": "stress",
+      "polarity": "negative",
+      "example_phrases": [
+        "I feel stressed",
+        "everything feels like too much",
+        "I am under so much pressure"
+      ]
+    },
+    {
+      "concept_id": "emotion_anxiety",
+      "type": "emotion",
+      "label": "anxiety",
+      "polarity": "negative",
+      "example_phrases": [
+        "I feel anxious",
+        "I cannot calm down",
+        "my mind keeps jumping to what could go wrong"
+      ]
+    },
+    {
+      "concept_id": "emotion_sadness",
+      "type": "emotion",
+      "label": "sadness",
+      "polarity": "negative",
+      "example_phrases": [
+        "I felt sad today",
+        "I wanted to cry",
+        "everything felt heavy"
+      ]
+    },
+    {
+      "concept_id": "emotion_loneliness",
+      "type": "emotion",
+      "label": "loneliness",
+      "polarity": "negative",
+      "example_phrases": [
+        "I felt lonely",
+        "I felt like nobody really noticed me",
+        "I spent the whole day alone"
+      ]
+    },
+    {
+      "concept_id": "emotion_anger",
+      "type": "emotion",
+      "label": "anger",
+      "polarity": "negative",
+      "example_phrases": [
+        "I was angry",
+        "I snapped at them",
+        "I felt irritated the whole time"
+      ]
+    },
+    {
+      "concept_id": "emotion_guilt",
+      "type": "emotion",
+      "label": "guilt",
+      "polarity": "negative",
+      "example_phrases": [
+        "I feel guilty",
+        "I keep thinking I should have done better",
+        "I blamed myself"
+      ]
+    },
+    {
+      "concept_id": "emotion_shame",
+      "type": "emotion",
+      "label": "shame",
+      "polarity": "negative",
+      "example_phrases": [
+        "I felt ashamed",
+        "I wanted to disappear",
+        "I felt embarrassed about myself"
+      ]
+    },
+    {
+      "concept_id": "emotion_disappointment",
+      "type": "emotion",
+      "label": "disappointment",
+      "polarity": "negative",
+      "example_phrases": [
+        "I was disappointed",
+        "it did not go the way I hoped",
+        "I felt let down"
+      ]
+    },
+    {
+      "concept_id": "emotion_fear",
+      "type": "emotion",
+      "label": "fear",
+      "polarity": "negative",
+      "example_phrases": [
+        "I was scared",
+        "I felt afraid",
+        "I could not stop thinking something bad would happen"
+      ]
+    },
+    {
+      "concept_id": "emotion_overwhelm",
+      "type": "emotion",
+      "label": "overwhelm",
+      "polarity": "negative",
+      "example_phrases": [
+        "I felt overwhelmed",
+        "there was too much going on",
+        "I could not handle everything"
+      ]
+    },
+    {
+      "concept_id": "emotion_relief",
+      "type": "emotion",
+      "label": "relief",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt relieved",
+        "a weight came off my shoulders",
+        "I could finally breathe again"
+      ]
+    },
+    {
+      "concept_id": "emotion_happiness",
+      "type": "emotion",
+      "label": "happiness",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt happy",
+        "I had a good day",
+        "I felt lighter than usual"
+      ]
+    },
+    {
+      "concept_id": "emotion_calm",
+      "type": "emotion",
+      "label": "calm",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt calm",
+        "my mind was quieter",
+        "I finally relaxed"
+      ]
+    },
+    {
+      "concept_id": "emotion_hope",
+      "type": "emotion",
+      "label": "hope",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt hopeful",
+        "maybe things can get better",
+        "I saw a way forward"
+      ]
+    },
+    {
+      "concept_id": "emotion_motivation",
+      "type": "emotion",
+      "label": "motivation",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt motivated",
+        "I wanted to get things done",
+        "I had energy to start again"
+      ]
+    },
+    {
+      "concept_id": "emotion_numbness",
+      "type": "emotion",
+      "label": "emotional numbness",
+      "polarity": "negative",
+      "example_phrases": [
+        "I felt numb",
+        "I did not feel anything",
+        "everything felt distant"
+      ]
+    },
+    {
+      "concept_id": "emotion_irritability",
+      "type": "emotion",
+      "label": "irritability",
+      "polarity": "negative",
+      "example_phrases": [
+        "I was irritated",
+        "small things annoyed me",
+        "I was short with everyone"
+      ]
+    },
+    {
+      "concept_id": "emotion_embarrassment",
+      "type": "emotion",
+      "label": "embarrassment",
+      "polarity": "negative",
+      "example_phrases": [
+        "I felt embarrassed",
+        "I kept replaying how awkward it was",
+        "I wish nobody had seen that"
+      ]
+    },
+    {
+      "concept_id": "symptom_sleep_loss",
+      "type": "symptom",
+      "label": "sleep loss",
+      "polarity": "negative",
+      "example_phrases": [
+        "I barely slept",
+        "I stayed awake for hours",
+        "I woke up again and again"
+      ]
+    },
+    {
+      "concept_id": "symptom_fatigue",
+      "type": "symptom",
+      "label": "fatigue",
+      "polarity": "negative",
+      "example_phrases": [
+        "I felt exhausted",
+        "I had no energy",
+        "I was tired all day"
+      ]
+    },
+    {
+      "concept_id": "symptom_low_mood",
+      "type": "symptom",
+      "label": "low mood",
+      "polarity": "negative",
+      "example_phrases": [
+        "my mood was low",
+        "I felt down all day",
+        "nothing felt good today"
+      ]
+    },
+    {
+      "concept_id": "symptom_restlessness",
+      "type": "symptom",
+      "label": "restlessness",
+      "polarity": "negative",
+      "example_phrases": [
+        "I could not sit still",
+        "I felt restless",
+        "I kept moving around"
+      ]
+    },
+    {
+      "concept_id": "symptom_racing_thoughts",
+      "type": "symptom",
+      "label": "racing thoughts",
+      "polarity": "negative",
+      "example_phrases": [
+        "my thoughts were racing",
+        "my mind would not stop",
+        "everything was spinning in my head"
+      ]
+    },
+    {
+      "concept_id": "symptom_concentration_problem",
+      "type": "symptom",
+      "label": "concentration difficulty",
+      "polarity": "negative",
+      "example_phrases": [
+        "I could not focus",
+        "I kept losing concentration",
+        "reading one page took forever"
+      ]
+    },
+    {
+      "concept_id": "symptom_appetite_loss",
+      "type": "symptom",
+      "label": "reduced appetite",
+      "polarity": "negative",
+      "example_phrases": [
+        "I did not feel like eating",
+        "I skipped lunch",
+        "food felt unappealing"
+      ]
+    },
+    {
+      "concept_id": "symptom_overeating",
+      "type": "symptom",
+      "label": "overeating",
+      "polarity": "negative",
+      "example_phrases": [
+        "I ate too much",
+        "I kept snacking even though I was not hungry",
+        "I stress-ate again"
+      ]
+    },
+    {
+      "concept_id": "symptom_headache",
+      "type": "symptom",
+      "label": "headache",
+      "polarity": "negative",
+      "example_phrases": [
+        "I had a headache",
+        "my head was pounding",
+        "my head hurt by the evening"
+      ]
+    },
+    {
+      "concept_id": "symptom_stomach_tension",
+      "type": "symptom",
+      "label": "stomach tension",
+      "polarity": "negative",
+      "example_phrases": [
+        "my stomach was tight",
+        "I felt sick from nerves",
+        "my stomach hurt all day"
+      ]
+    },
+    {
+      "concept_id": "symptom_chest_tightness",
+      "type": "symptom",
+      "label": "chest tightness",
+      "polarity": "negative",
+      "example_phrases": [
+        "my chest felt tight",
+        "it felt hard to breathe",
+        "there was pressure in my chest"
+      ]
+    },
+    {
+      "concept_id": "symptom_panic_like_episode",
+      "type": "symptom",
+      "label": "panic-like episode",
+      "polarity": "negative",
+      "example_phrases": [
+        "I panicked",
+        "my heart was racing and I could not breathe",
+        "I felt like I was losing control"
+      ]
+    },
+    {
+      "concept_id": "symptom_social_withdrawal",
+      "type": "symptom",
+      "label": "social withdrawal",
+      "polarity": "negative",
+      "example_phrases": [
+        "I ignored messages",
+        "I did not want to see anyone",
+        "I stayed in my room"
+      ]
+    },
+    {
+      "concept_id": "symptom_loss_of_interest",
+      "type": "symptom",
+      "label": "loss of interest",
+      "polarity": "negative",
+      "example_phrases": [
+        "nothing sounded fun",
+        "I did not care about my hobbies",
+        "even music felt boring"
+      ]
+    },
+    {
+      "concept_id": "symptom_low_self_worth",
+      "type": "symptom",
+      "label": "low self-worth",
+      "polarity": "negative",
+      "example_phrases": [
+        "I felt worthless",
+        "I am not good enough",
+        "I felt like a failure"
+      ]
+    },
+    {
+      "concept_id": "symptom_tension",
+      "type": "symptom",
+      "label": "body tension",
+      "polarity": "negative",
+      "example_phrases": [
+        "my shoulders were tense",
+        "my jaw was tight",
+        "my whole body felt tense"
+      ]
+    },
+    {
+      "concept_id": "symptom_avoidance",
+      "type": "symptom",
+      "label": "avoidance",
+      "polarity": "negative",
+      "example_phrases": [
+        "I avoided the email",
+        "I kept putting it off",
+        "I did not want to face it"
+      ]
+    },
+    {
+      "concept_id": "symptom_crying",
+      "type": "symptom",
+      "label": "crying",
+      "polarity": "negative",
+      "example_phrases": [
+        "I cried",
+        "I almost cried",
+        "I could not stop crying"
+      ]
+    },
+    {
+      "concept_id": "stressor_academic_pressure",
+      "type": "stressor",
+      "label": "academic pressure",
+      "polarity": "negative",
+      "example_phrases": [
+        "university pressure is getting to me",
+        "I have too much coursework",
+        "grades are stressing me out"
+      ]
+    },
+    {
+      "concept_id": "stressor_work_pressure",
+      "type": "stressor",
+      "label": "work pressure",
+      "polarity": "negative",
+      "example_phrases": [
+        "work was too much",
+        "my boss needs it tomorrow",
+        "I am drowning in tasks"
+      ]
+    },
+    {
+      "concept_id": "stressor_financial_worry",
+      "type": "stressor",
+      "label": "financial worry",
+      "polarity": "negative",
+      "example_phrases": [
+        "I am worried about money",
+        "rent is coming up",
+        "I do not know how to pay for this"
+      ]
+    },
+    {
+      "concept_id": "stressor_family_conflict",
+      "type": "stressor",
+      "label": "family conflict",
+      "polarity": "negative",
+      "example_phrases": [
+        "my family is stressing me out",
+        "I argued with my parents",
+        "home feels tense"
+      ]
+    },
+    {
+      "concept_id": "stressor_relationship_conflict",
+      "type": "stressor",
+      "label": "relationship conflict",
+      "polarity": "negative",
+      "example_phrases": [
+        "we had a fight",
+        "things are tense between us",
+        "I do not know where we stand"
+      ]
+    },
+    {
+      "concept_id": "stressor_friend_conflict",
+      "type": "stressor",
+      "label": "friend conflict",
+      "polarity": "negative",
+      "example_phrases": [
+        "my friend ignored me",
+        "we argued",
+        "I feel left out by my friends"
+      ]
+    },
+    {
+      "concept_id": "stressor_social_comparison",
+      "type": "stressor",
+      "label": "social comparison",
+      "polarity": "negative",
+      "example_phrases": [
+        "everyone else seems ahead",
+        "I compared myself to them again",
+        "they all seem to have it together"
+      ]
+    },
+    {
+      "concept_id": "stressor_uncertainty_future",
+      "type": "stressor",
+      "label": "future uncertainty",
+      "polarity": "negative",
+      "example_phrases": [
+        "I do not know what comes next",
+        "the future feels uncertain",
+        "I feel lost about my path"
+      ]
+    },
+    {
+      "concept_id": "stressor_deadline",
+      "type": "stressor",
+      "label": "deadline pressure",
+      "polarity": "negative",
+      "example_phrases": [
+        "the deadline is tomorrow",
+        "I am running out of time",
+        "I have to finish this soon"
+      ]
+    },
+    {
+      "concept_id": "stressor_health_worry",
+      "type": "stressor",
+      "label": "health worry",
+      "polarity": "negative",
+      "example_phrases": [
+        "I am worried something is wrong",
+        "I kept thinking about my health",
+        "the symptoms scared me"
+      ]
+    },
+    {
+      "concept_id": "stressor_overcommitment",
+      "type": "stressor",
+      "label": "overcommitment",
+      "polarity": "negative",
+      "example_phrases": [
+        "I said yes to too many things",
+        "my calendar is full",
+        "I cannot keep up with everything"
+      ]
+    },
+    {
+      "concept_id": "stressor_lonely_environment",
+      "type": "stressor",
+      "label": "lonely environment",
+      "polarity": "negative",
+      "example_phrases": [
+        "my room felt empty",
+        "campus felt lonely",
+        "the city felt cold today"
+      ]
+    },
+    {
+      "concept_id": "stressor_sleep_schedule_disruption",
+      "type": "stressor",
+      "label": "disrupted sleep schedule",
+      "polarity": "negative",
+      "example_phrases": [
+        "my sleep schedule is messed up",
+        "I went to bed too late again",
+        "I woke up at a strange time"
+      ]
+    },
+    {
+      "concept_id": "stressor_major_decision",
+      "type": "stressor",
+      "label": "major decision",
+      "polarity": "negative",
+      "example_phrases": [
+        "I have to make a big decision",
+        "I do not know which option to choose",
+        "the decision is weighing on me"
+      ]
+    },
+    {
+      "concept_id": "event_exam",
+      "type": "event",
+      "label": "exam",
+      "polarity": "neutral",
+      "example_phrases": [
+        "I have an exam tomorrow",
+        "the test was today",
+        "I failed the exam"
+      ]
+    },
+    {
+      "concept_id": "event_assignment_due",
+      "type": "event",
+      "label": "assignment due",
+      "polarity": "neutral",
+      "example_phrases": [
+        "the assignment is due",
+        "I still have to submit it",
+        "the paper is due tomorrow"
+      ]
+    },
+    {
+      "concept_id": "event_argument",
+      "type": "event",
+      "label": "argument",
+      "polarity": "negative",
+      "example_phrases": [
+        "we had an argument",
+        "we fought",
+        "the conversation turned into a fight"
+      ]
+    },
+    {
+      "concept_id": "event_rejection",
+      "type": "event",
+      "label": "rejection",
+      "polarity": "negative",
+      "example_phrases": [
+        "I got rejected",
+        "they said no",
+        "I was not selected"
+      ]
+    },
+    {
+      "concept_id": "event_criticism",
+      "type": "event",
+      "label": "criticism",
+      "polarity": "negative",
+      "example_phrases": [
+        "I got criticized",
+        "they pointed out everything I did wrong",
+        "the feedback hurt"
+      ]
+    },
+    {
+      "concept_id": "event_missed_deadline",
+      "type": "event",
+      "label": "missed deadline",
+      "polarity": "negative",
+      "example_phrases": [
+        "I missed the deadline",
+        "I submitted it too late",
+        "I did not finish in time"
+      ]
+    },
+    {
+      "concept_id": "event_poor_sleep_night",
+      "type": "event",
+      "label": "poor sleep night",
+      "polarity": "negative",
+      "example_phrases": [
+        "last night was awful",
+        "I slept badly",
+        "I barely slept last night"
+      ]
+    },
+    {
+      "concept_id": "event_social_meeting",
+      "type": "event",
+      "label": "social meeting",
+      "polarity": "positive",
+      "example_phrases": [
+        "I met a friend",
+        "we went for coffee",
+        "I saw people from class"
+      ]
+    },
+    {
+      "concept_id": "event_physical_exercise",
+      "type": "event",
+      "label": "exercise session",
+      "polarity": "positive",
+      "example_phrases": [
+        "I went for a run",
+        "I did a workout",
+        "I walked outside for an hour"
+      ]
+    },
+    {
+      "concept_id": "event_good_news",
+      "type": "event",
+      "label": "good news",
+      "polarity": "positive",
+      "example_phrases": [
+        "I got good news",
+        "it worked out",
+        "I passed"
+      ]
+    },
+    {
+      "concept_id": "event_failure",
+      "type": "event",
+      "label": "failure",
+      "polarity": "negative",
+      "example_phrases": [
+        "I failed",
+        "it went badly",
+        "I messed it up"
+      ]
+    },
+    {
+      "concept_id": "event_travel",
+      "type": "event",
+      "label": "travel",
+      "polarity": "neutral",
+      "example_phrases": [
+        "I traveled today",
+        "the train ride was long",
+        "I had to go across town"
+      ]
+    },
+    {
+      "concept_id": "event_illness",
+      "type": "event",
+      "label": "illness",
+      "polarity": "negative",
+      "example_phrases": [
+        "I felt sick",
+        "I caught something",
+        "I was unwell today"
+      ]
+    },
+    {
+      "concept_id": "event_breakup_or_distance",
+      "type": "event",
+      "label": "relationship distance",
+      "polarity": "negative",
+      "example_phrases": [
+        "we are drifting apart",
+        "we broke up",
+        "they felt distant"
+      ]
+    },
+    {
+      "concept_id": "activity_studying",
+      "type": "activity",
+      "label": "studying",
+      "polarity": "neutral",
+      "example_phrases": [
+        "I studied",
+        "I tried to revise",
+        "I spent the evening reading notes"
+      ]
+    },
+    {
+      "concept_id": "activity_working",
+      "type": "activity",
+      "label": "working",
+      "polarity": "neutral",
+      "example_phrases": [
+        "I worked all day",
+        "I had a long shift",
+        "I was stuck in meetings"
+      ]
+    },
+    {
+      "concept_id": "activity_procrastination",
+      "type": "activity",
+      "label": "procrastination",
+      "polarity": "negative",
+      "example_phrases": [
+        "I procrastinated",
+        "I kept avoiding the task",
+        "I wasted time instead of starting"
+      ]
+    },
+    {
+      "concept_id": "activity_scrolling_phone",
+      "type": "activity",
+      "label": "phone scrolling",
+      "polarity": "negative",
+      "example_phrases": [
+        "I scrolled for hours",
+        "I kept checking my phone",
+        "I lost time on social media"
+      ]
+    },
+    {
+      "concept_id": "activity_exercise",
+      "type": "activity",
+      "label": "exercise",
+      "polarity": "positive",
+      "example_phrases": [
+        "I exercised",
+        "I went for a run",
+        "I moved my body"
+      ]
+    },
+    {
+      "concept_id": "activity_walk_outside",
+      "type": "activity",
+      "label": "walk outside",
+      "polarity": "positive",
+      "example_phrases": [
+        "I went for a walk",
+        "I walked outside",
+        "fresh air helped a little"
+      ]
+    },
+    {
+      "concept_id": "activity_talking_friend",
+      "type": "activity",
+      "label": "talking to a friend",
+      "polarity": "positive",
+      "example_phrases": [
+        "I talked to a friend",
+        "I called someone",
+        "we talked for a while"
+      ]
+    },
+    {
+      "concept_id": "activity_family_call",
+      "type": "activity",
+      "label": "family call",
+      "polarity": "mixed",
+      "example_phrases": [
+        "I called my parents",
+        "I spoke to my family",
+        "family called me today"
+      ]
+    },
+    {
+      "concept_id": "activity_journaling",
+      "type": "activity",
+      "label": "journaling",
+      "polarity": "positive",
+      "example_phrases": [
+        "I wrote in my journal",
+        "writing helped me sort things out",
+        "I tried to write it down"
+      ]
+    },
+    {
+      "concept_id": "activity_meditation",
+      "type": "activity",
+      "label": "meditation",
+      "polarity": "positive",
+      "example_phrases": [
+        "I meditated",
+        "I tried breathing slowly",
+        "I sat quietly for a few minutes"
+      ]
+    },
+    {
+      "concept_id": "activity_cleaning",
+      "type": "activity",
+      "label": "cleaning",
+      "polarity": "positive",
+      "example_phrases": [
+        "I cleaned my room",
+        "I tidied up",
+        "the room feels less chaotic"
+      ]
+    },
+    {
+      "concept_id": "activity_cooking",
+      "type": "activity",
+      "label": "cooking",
+      "polarity": "positive",
+      "example_phrases": [
+        "I cooked dinner",
+        "I made myself food",
+        "I ate something proper"
+      ]
+    },
+    {
+      "concept_id": "activity_alcohol_use",
+      "type": "activity",
+      "label": "alcohol use",
+      "polarity": "mixed",
+      "example_phrases": [
+        "I drank",
+        "I had too much to drink",
+        "I used alcohol to relax"
+      ]
+    },
+    {
+      "concept_id": "activity_avoiding_people",
+      "type": "activity",
+      "label": "avoiding people",
+      "polarity": "negative",
+      "example_phrases": [
+        "I avoided everyone",
+        "I did not answer messages",
+        "I stayed away from people"
+      ]
+    },
+    {
+      "concept_id": "activity_resting",
+      "type": "activity",
+      "label": "resting",
+      "polarity": "positive",
+      "example_phrases": [
+        "I rested",
+        "I took a break",
+        "I let myself slow down"
+      ]
+    },
+    {
+      "concept_id": "activity_creative_hobby",
+      "type": "activity",
+      "label": "creative hobby",
+      "polarity": "positive",
+      "example_phrases": [
+        "I played music",
+        "I drew for a while",
+        "I worked on something creative"
+      ]
+    },
+    {
+      "concept_id": "thought_fear_of_failure",
+      "type": "thought",
+      "label": "fear of failure",
+      "polarity": "negative",
+      "example_phrases": [
+        "I am scared I will fail",
+        "what if I mess this up",
+        "I cannot afford to fail"
+      ]
+    },
+    {
+      "concept_id": "thought_self_blame",
+      "type": "thought",
+      "label": "self-blame",
+      "polarity": "negative",
+      "example_phrases": [
+        "this is my fault",
+        "I should have done better",
+        "I always ruin things"
+      ]
+    },
+    {
+      "concept_id": "thought_not_good_enough",
+      "type": "thought",
+      "label": "not good enough",
+      "polarity": "negative",
+      "example_phrases": [
+        "I am not good enough",
+        "everyone is better than me",
+        "I do not belong here"
+      ]
+    },
+    {
+      "concept_id": "thought_catastrophizing",
+      "type": "thought",
+      "label": "catastrophizing",
+      "polarity": "negative",
+      "example_phrases": [
+        "everything will fall apart",
+        "this will ruin everything",
+        "there is no way back from this"
+      ]
+    },
+    {
+      "concept_id": "thought_rumination",
+      "type": "thought",
+      "label": "rumination",
+      "polarity": "negative",
+      "example_phrases": [
+        "I kept replaying it",
+        "I could not stop thinking about it",
+        "my mind went in circles"
+      ]
+    },
+    {
+      "concept_id": "thought_social_rejection",
+      "type": "thought",
+      "label": "perceived social rejection",
+      "polarity": "negative",
+      "example_phrases": [
+        "they do not want me there",
+        "everyone is annoyed by me",
+        "I felt left out"
+      ]
+    },
+    {
+      "concept_id": "thought_uncertain_future",
+      "type": "thought",
+      "label": "uncertain future",
+      "polarity": "negative",
+      "example_phrases": [
+        "I do not know where I am going",
+        "the future feels scary",
+        "I cannot picture what comes next"
+      ]
+    },
+    {
+      "concept_id": "thought_need_to_be_perfect",
+      "type": "thought",
+      "label": "need to be perfect",
+      "polarity": "negative",
+      "example_phrases": [
+        "it has to be perfect",
+        "anything less feels like failure",
+        "I cannot make mistakes"
+      ]
+    },
+    {
+      "concept_id": "thought_loss_of_control",
+      "type": "thought",
+      "label": "loss of control",
+      "polarity": "negative",
+      "example_phrases": [
+        "I have no control",
+        "everything is slipping away",
+        "I cannot manage this"
+      ]
+    },
+    {
+      "concept_id": "thought_burden_to_others",
+      "type": "thought",
+      "label": "being a burden",
+      "polarity": "negative",
+      "example_phrases": [
+        "I am a burden",
+        "I do not want to bother anyone",
+        "people are tired of me"
+      ]
+    },
+    {
+      "concept_id": "thought_positive_reframe",
+      "type": "thought",
+      "label": "positive reframe",
+      "polarity": "positive",
+      "example_phrases": [
+        "maybe it was not as bad as I thought",
+        "I can try again",
+        "one bad day does not mean everything is over"
+      ]
+    },
+    {
+      "concept_id": "thought_self_compassion",
+      "type": "thought",
+      "label": "self-compassion",
+      "polarity": "positive",
+      "example_phrases": [
+        "I tried to be kind to myself",
+        "I did the best I could",
+        "I do not have to be perfect"
+      ]
+    },
+    {
+      "concept_id": "thought_problem_solving",
+      "type": "thought",
+      "label": "problem solving",
+      "polarity": "positive",
+      "example_phrases": [
+        "I made a plan",
+        "I know what to do next",
+        "I broke it into smaller steps"
+      ]
+    },
+    {
+      "concept_id": "thought_gratitude",
+      "type": "thought",
+      "label": "gratitude",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt grateful",
+        "I appreciated the small things",
+        "at least I had that moment"
+      ]
+    },
+    {
+      "concept_id": "coping_deep_breathing",
+      "type": "coping_action",
+      "label": "deep breathing",
+      "polarity": "positive",
+      "example_phrases": [
+        "I took deep breaths",
+        "I focused on my breathing",
+        "breathing slowly helped"
+      ]
+    },
+    {
+      "concept_id": "coping_meditation",
+      "type": "coping_action",
+      "label": "meditation",
+      "polarity": "positive",
+      "example_phrases": [
+        "I meditated",
+        "I sat quietly",
+        "I tried mindfulness"
+      ]
+    },
+    {
+      "concept_id": "coping_walk",
+      "type": "coping_action",
+      "label": "walk",
+      "polarity": "positive",
+      "example_phrases": [
+        "I went for a walk",
+        "walking helped",
+        "fresh air cleared my head"
+      ]
+    },
+    {
+      "concept_id": "coping_exercise",
+      "type": "coping_action",
+      "label": "exercise",
+      "polarity": "positive",
+      "example_phrases": [
+        "I exercised to clear my head",
+        "the workout helped",
+        "running made me feel better"
+      ]
+    },
+    {
+      "concept_id": "coping_talk_to_friend",
+      "type": "coping_action",
+      "label": "talk to friend",
+      "polarity": "positive",
+      "example_phrases": [
+        "I talked to a friend",
+        "I called someone I trust",
+        "telling them helped"
+      ]
+    },
+    {
+      "concept_id": "coping_family_support",
+      "type": "coping_action",
+      "label": "family support",
+      "polarity": "mixed",
+      "example_phrases": [
+        "I spoke to my family",
+        "my parents tried to help",
+        "family support helped a bit"
+      ]
+    },
+    {
+      "concept_id": "coping_journaling",
+      "type": "coping_action",
+      "label": "journaling",
+      "polarity": "positive",
+      "example_phrases": [
+        "writing this down helped",
+        "journaling made it clearer",
+        "I wrote about what happened"
+      ]
+    },
+    {
+      "concept_id": "coping_planning",
+      "type": "coping_action",
+      "label": "planning",
+      "polarity": "positive",
+      "example_phrases": [
+        "I made a plan",
+        "I wrote a to-do list",
+        "I broke it into steps"
+      ]
+    },
+    {
+      "concept_id": "coping_rest",
+      "type": "coping_action",
+      "label": "rest",
+      "polarity": "positive",
+      "example_phrases": [
+        "I rested",
+        "I took a break",
+        "I let myself pause"
+      ]
+    },
+    {
+      "concept_id": "coping_sleep_routine",
+      "type": "coping_action",
+      "label": "sleep routine",
+      "polarity": "positive",
+      "example_phrases": [
+        "I went to bed earlier",
+        "I put my phone away before sleep",
+        "I tried to fix my sleep schedule"
+      ]
+    },
+    {
+      "concept_id": "coping_music",
+      "type": "coping_action",
+      "label": "music",
+      "polarity": "positive",
+      "example_phrases": [
+        "I listened to music",
+        "music calmed me down",
+        "playing guitar helped"
+      ]
+    },
+    {
+      "concept_id": "coping_cleaning",
+      "type": "coping_action",
+      "label": "cleaning",
+      "polarity": "positive",
+      "example_phrases": [
+        "I cleaned my room",
+        "tidying helped",
+        "my space felt less chaotic"
+      ]
+    },
+    {
+      "concept_id": "coping_cooking_meal",
+      "type": "coping_action",
+      "label": "cooking meal",
+      "polarity": "positive",
+      "example_phrases": [
+        "I cooked myself dinner",
+        "making food helped",
+        "I ate something proper"
+      ]
+    },
+    {
+      "concept_id": "coping_time_in_nature",
+      "type": "coping_action",
+      "label": "time in nature",
+      "polarity": "positive",
+      "example_phrases": [
+        "I sat in the park",
+        "being outside helped",
+        "the trees made me feel calmer"
+      ]
+    },
+    {
+      "concept_id": "coping_avoidance",
+      "type": "coping_action",
+      "label": "avoidance coping",
+      "polarity": "negative",
+      "example_phrases": [
+        "I avoided the task",
+        "I ignored the message",
+        "I pretended it did not exist"
+      ]
+    },
+    {
+      "concept_id": "coping_distraction",
+      "type": "coping_action",
+      "label": "distraction",
+      "polarity": "mixed",
+      "example_phrases": [
+        "I watched a show to distract myself",
+        "I tried to keep my mind busy",
+        "I distracted myself for a while"
+      ]
+    },
+    {
+      "concept_id": "activity_reading",
+      "type": "activity",
+      "label": "reading",
+      "polarity": "positive",
+      "example_phrases": [
+        "I read for a while",
+        "I got lost in a book",
+        "I finally picked up my book again"
+      ]
+    },
+    {
+      "concept_id": "emotion_pride",
+      "type": "emotion",
+      "label": "pride",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt proud of myself",
+        "I actually pulled it off",
+        "I was pleased with how I handled it"
+      ]
+    },
+    {
+      "concept_id": "emotion_gratitude",
+      "type": "emotion",
+      "label": "gratitude",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt grateful",
+        "I noticed how thankful I was",
+        "I appreciated having them around"
+      ]
+    },
+    {
+      "concept_id": "emotion_contentment",
+      "type": "emotion",
+      "label": "contentment",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt content",
+        "I was just at ease with everything",
+        "for once nothing felt like it needed fixing"
+      ]
+    },
+    {
+      "concept_id": "emotion_curiosity",
+      "type": "emotion",
+      "label": "curiosity",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt curious about it",
+        "I wanted to know more",
+        "it actually got me interested"
+      ]
+    },
+    {
+      "concept_id": "emotion_excitement",
+      "type": "emotion",
+      "label": "excitement",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt excited",
+        "I could hardly wait",
+        "I had this buzz of energy about it"
+      ]
+    },
+    {
+      "concept_id": "event_reconciliation",
+      "type": "event",
+      "label": "reconciliation",
+      "polarity": "positive",
+      "example_phrases": [
+        "we made up",
+        "we finally talked it through",
+        "things felt okay between us again"
+      ]
+    },
+    {
+      "concept_id": "event_promotion_or_win",
+      "type": "event",
+      "label": "a win or recognition",
+      "polarity": "positive",
+      "example_phrases": [
+        "I got some good recognition at work",
+        "something I worked for finally came through",
+        "I got picked for it"
+      ]
+    },
+    {
+      "concept_id": "event_help_from_stranger",
+      "type": "event",
+      "label": "unexpected kindness",
+      "polarity": "positive",
+      "example_phrases": [
+        "someone helped me out of nowhere",
+        "a stranger was really kind to me",
+        "someone went out of their way for me"
+      ]
+    },
+    {
+      "concept_id": "event_family_visit",
+      "type": "event",
+      "label": "a family visit",
+      "polarity": "positive",
+      "example_phrases": [
+        "family came over",
+        "I spent time with my family",
+        "we had everyone round"
+      ]
+    },
+    {
+      "concept_id": "event_getting_paid",
+      "type": "event",
+      "label": "getting paid",
+      "polarity": "positive",
+      "example_phrases": [
+        "my pay came through",
+        "I finally got paid",
+        "the money landed in my account"
+      ]
+    },
+    {
+      "concept_id": "event_creative_breakthrough",
+      "type": "event",
+      "label": "a creative breakthrough",
+      "polarity": "positive",
+      "example_phrases": [
+        "something finally clicked with my project",
+        "I cracked the thing I was stuck on",
+        "the idea just came together"
+      ]
+    },
+    {
+      "concept_id": "event_new_opportunity",
+      "type": "event",
+      "label": "a new opportunity",
+      "polarity": "positive",
+      "example_phrases": [
+        "a new opportunity opened up",
+        "I got offered something new",
+        "a door opened that I wasn't expecting"
+      ]
+    },
+    {
+      "concept_id": "event_routine_appointment",
+      "type": "event",
+      "label": "a routine appointment",
+      "polarity": "neutral",
+      "example_phrases": [
+        "I had an appointment on the calendar",
+        "there was a check-up I had to go to",
+        "I had that appointment booked"
+      ]
+    },
+    {
+      "concept_id": "event_errands",
+      "type": "event",
+      "label": "running errands",
+      "polarity": "neutral",
+      "example_phrases": [
+        "I had errands to run",
+        "I needed to sort out a few things in town",
+        "I had a list of things to get done"
+      ]
+    },
+    {
+      "concept_id": "event_meeting",
+      "type": "event",
+      "label": "a scheduled meeting",
+      "polarity": "neutral",
+      "example_phrases": [
+        "I had a meeting today",
+        "there was a call on the calendar",
+        "I had to sit in on a meeting"
+      ]
+    },
+    {
+      "concept_id": "event_class_or_lecture",
+      "type": "event",
+      "label": "a class or lecture",
+      "polarity": "neutral",
+      "example_phrases": [
+        "I had a class to get to",
+        "there was a lecture today",
+        "I sat in on the session"
+      ]
+    },
+    {
+      "concept_id": "thought_acceptance",
+      "type": "thought",
+      "label": "acceptance",
+      "polarity": "positive",
+      "example_phrases": [
+        "I let myself accept it for what it was",
+        "I made peace with how things are",
+        "I stopped fighting it"
+      ]
+    },
+    {
+      "concept_id": "thought_hopeful_outlook",
+      "type": "thought",
+      "label": "hopeful outlook",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt like things might work out",
+        "I could see it getting better",
+        "I had a good feeling about where this is going"
+      ]
+    },
+    {
+      "concept_id": "thought_perspective_taking",
+      "type": "thought",
+      "label": "putting things in perspective",
+      "polarity": "positive",
+      "example_phrases": [
+        "I reminded myself it wasn't that big a deal",
+        "in the grand scheme it was small",
+        "I stepped back and saw it more clearly"
+      ]
+    },
+    {
+      "concept_id": "thought_self_encouragement",
+      "type": "thought",
+      "label": "self-encouragement",
+      "polarity": "positive",
+      "example_phrases": [
+        "I told myself I could do this",
+        "I gave myself a bit of a pep talk",
+        "I reminded myself how far I'd come"
+      ]
+    },
+    {
+      "concept_id": "thought_looking_forward",
+      "type": "thought",
+      "label": "looking forward to something",
+      "polarity": "positive",
+      "example_phrases": [
+        "I found myself looking forward to it",
+        "there was something to look forward to",
+        "I kept thinking about the good part coming up"
+      ]
+    },
+    {
+      "concept_id": "thought_feeling_capable",
+      "type": "thought",
+      "label": "feeling capable",
+      "polarity": "positive",
+      "example_phrases": [
+        "I felt like I could handle it",
+        "I actually felt on top of things",
+        "I trusted myself to manage it"
+      ]
+    }
+  ],
+  "edge_types": [
+    {
+      "edge_type": "causes"
+    },
+    {
+      "edge_type": "increases"
+    },
+    {
+      "edge_type": "decreases"
+    },
+    {
+      "edge_type": "follows"
+    },
+    {
+      "edge_type": "linked_to"
+    }
+  ]
+}

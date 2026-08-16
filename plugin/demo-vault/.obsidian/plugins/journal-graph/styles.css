@@ -1,0 +1,445 @@
+/* Journal Graph plugin — side panel layout */
+
+.jg-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 8px;
+  padding: 8px 10px;
+  font-size: var(--font-ui-small);
+  overflow-y: auto;
+}
+
+/* Text rows must never be squeezed by the graph area — only the graph flexes. */
+.jg-root > * {
+  flex-shrink: 0;
+}
+
+/* ── Header row: title · live status · new-entry button ────── */
+.jg-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.jg-title {
+  font-weight: 600;
+  font-size: var(--font-ui-medium);
+}
+
+.jg-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.jg-live.is-hidden {
+  display: none;
+}
+
+.jg-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--interactive-accent);
+  animation: jg-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes jg-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+}
+
+.jg-spinner {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 2px solid var(--background-modifier-border);
+  border-top-color: var(--interactive-accent);
+  animation: jg-spin 0.8s linear infinite;
+}
+
+@keyframes jg-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.jg-new-entry {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* ── Mode toggle ───────────────────────────────────────────── */
+.jg-modebar {
+  display: flex;
+  gap: 4px;
+}
+
+.jg-mode-btn {
+  flex: 1;
+  padding: 4px 8px;
+  border-radius: var(--radius-s, 4px);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  color: var(--text-normal);
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.1s ease;
+}
+
+.jg-mode-btn:hover {
+  background: var(--background-modifier-hover);
+}
+
+.jg-mode-btn.is-active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+/* ── Status / message line ─────────────────────────────────── */
+.jg-msg {
+  color: var(--text-muted);
+  font-style: italic;
+  min-height: 1.2em;
+}
+
+.jg-msg.jg-msg-error {
+  color: var(--text-error);
+  font-style: normal;
+}
+
+/* Which source the note date came from (frontmatter / filename / ctime). */
+.jg-datesrc {
+  color: var(--text-faint);
+  font-size: 11px;
+  min-height: 0;
+}
+
+.jg-datesrc:empty {
+  display: none;
+}
+
+/* Retry row shown when the extraction server is unreachable. */
+.jg-retry {
+  display: flex;
+  gap: 6px;
+}
+
+.jg-retry.is-hidden {
+  display: none;
+}
+
+/* ── Timeline controls ─────────────────────────────────────── */
+.jg-timeline-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s, 6px);
+  background: var(--background-secondary);
+}
+
+.jg-timeline-controls.is-hidden {
+  display: none;
+}
+
+.jg-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.jg-btn {
+  padding: 3px 8px;
+  border-radius: var(--radius-s, 4px);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.1s ease;
+}
+
+.jg-btn:hover {
+  background: var(--background-modifier-hover);
+}
+
+.jg-btn:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.jg-btn-primary {
+  margin-left: auto;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+.jg-btn-primary:hover {
+  background: var(--interactive-accent-hover, var(--interactive-accent));
+}
+
+.jg-date-label {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-normal);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.jg-play.is-playing {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+.jg-export-btn {
+  width: 100%;
+  margin-left: 0;
+  padding: 5px 8px;
+}
+
+.jg-slider {
+  width: 100%;
+}
+
+/* Quiet prefetch progress under the slider ("caching 4/14…"). */
+.jg-prefetch {
+  color: var(--text-faint);
+  font-size: 11px;
+  min-height: 0;
+}
+
+.jg-prefetch:empty {
+  display: none;
+}
+
+.jg-mood {
+  position: relative;
+  height: 110px;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s, 4px);
+  padding: 4px;
+}
+
+.jg-mood-empty {
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+  padding: 12px;
+}
+
+/* ── Graph area ────────────────────────────────────────────── */
+.jg-graph-wrap {
+  position: relative;
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 360px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s, 6px);
+  background: var(--background-primary);
+  overflow: hidden;
+}
+
+.jg-graph {
+  width: 100%;
+  height: 100%;
+}
+
+/* Legend lives BELOW the canvas, not on top of it — it cannot obscure nodes. */
+.jg-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px 8px;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s, 4px);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.jg-legend-title {
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.jg-legend-types,
+.jg-legend-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+}
+
+.jg-legend-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.jg-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.jg-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid var(--background-modifier-border);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.jg-badge-pos {
+  color: #15803d;
+}
+
+.jg-badge-neg {
+  color: #b91c1c;
+}
+
+.jg-legend-note {
+  color: var(--text-muted);
+}
+
+/* ── Sections ──────────────────────────────────────────────── */
+.jg-section-title {
+  font-weight: 600;
+  margin-top: 4px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 2px;
+}
+
+.jg-detail,
+.jg-predicted {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.jg-detail-empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.jg-kv {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 2px 8px;
+}
+
+.jg-kv-key {
+  color: var(--text-muted);
+}
+
+/* Predicted-concept chips: type dot + label + thin score bar. */
+.jg-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.jg-chip {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 3px 8px 4px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s, 4px);
+  background: var(--background-secondary);
+  font-size: 11px;
+}
+
+.jg-chip-top {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.jg-chip-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.jg-chip-label {
+  color: var(--text-normal);
+}
+
+.jg-chip-bar {
+  height: 3px;
+  border-radius: 2px;
+  background: var(--background-modifier-border);
+  overflow: hidden;
+}
+
+.jg-chip-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: var(--interactive-accent);
+}
+
+.jg-predicted-more {
+  color: var(--text-muted);
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+/* Honesty note: one muted line, no box. */
+.jg-note {
+  color: var(--text-faint);
+  font-size: 11px;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+/* ── Export progress modal ─────────────────────────────────── */
+.jg-export-modal .jg-export-status {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  margin-bottom: 10px;
+}
+
+.jg-export-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--background-modifier-border);
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.jg-export-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 3px;
+  background: var(--interactive-accent);
+  transition: width 0.2s ease;
+}
